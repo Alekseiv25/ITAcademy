@@ -1,0 +1,35 @@
+
+.main {max-width: 1000px; margin: 0 auto;}
+.container {
+	font-size: 40px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	line-height: 200%;
+    padding: 100px;
+}
+
+.background-top {
+	background: url(../img/ramka-top.png) repeat-x top;
+}
+.background-left {
+	background: url(../img/ramka-left.png) repeat-y left;
+}
+.background-top-left {
+	background: url(../img/ramka-top-left.png) no-repeat left top;
+}
+.background-bottom {
+	background: url(../img/ramka-top.png) repeat-x bottom;
+}
+.background-bottom-left {
+	background: url(../img/ramka-bottom-left.png) no-repeat left bottom;
+}
+.background-right {
+	background: url(../img/ramka-left.png) repeat-y right;
+}
+.background-bottom-right {
+	background: url(../img/ramka-bottom-right.png) no-repeat right bottom;
+}
+.background-top-right {
+	background: url(../img/ramka-top-right.png) no-repeat right top;
+}
