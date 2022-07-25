@@ -12,7 +12,7 @@
 }
 
 
-.background-top-right {
+.background {
 	background: url(../img/ramka-top-left.png) no-repeat left top,
 		url(../img/ramka-bottom-left.png) no-repeat left bottom,
 		url(../img/ramka-bottom-right.png) no-repeat right bottom,
