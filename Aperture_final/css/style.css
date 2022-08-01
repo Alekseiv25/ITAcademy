@@ -187,20 +187,25 @@ body {
 	margin-bottom: 42px;
 }
 
-.photo_item {
+.photo_items {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+flex-wrap: wrap;
 }
-.photo_list_product {
+/* А вот тут было 2 секции  */
+.photo_list {
 	width: 576px;
-	background-image: url(../img/product.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: 16px;
-	margin-right: 16px;
+	margin-right: 8px;
 	padding: 421px 30px 30px 30px;
 }
+/* вот тут было мэргин 16 пикс */
+.photo_list:nth-child(even) {
+	margin-right: 0px;
+}
+/* а вот этого вообще не было */
 .photo_title {
 	font-size: 14px;
 	line-height: 20px;
@@ -233,32 +238,20 @@ body {
 	font-size: 15px;
 	color: black;
 }
-.photo_list_architecture {
-	width: 576px;
+/* Imgs */
+.product {
+	background-image: url(../img/product.jpg);
+}
+.architecture {
 	background-image: url(../img/architecture.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 16px;
-	padding: 421px 30px 30px 30px;
 }
-.photo_list_drone {
-	width: 576px;
+.drone {
 	background-image: url(../img/drone.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 16px;
-	margin-right: 16px;
-	padding: 421px 30px 30px 30px;
 }
-.photo_list_wildlife {
-	width: 576px;
+.wildlife {
 	background-image: url(../img/wildlife.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 16px;
-	padding: 421px 30px 30px 30px;
 }
-
+/* Imgs */
 .btn_photo:hover,
 .btn_photo:focus,
 .btn_photo:active {
@@ -295,13 +288,6 @@ body {
 	line-height: 20px;
 	color: #c0c0c0;
 }
-.sunset_bottom {
-	display: flex;
-	align-items: center;
-	margin-bottom: 40px;
-	margin-right: -16px;
-}
-
 .img_bottom {
 	padding-right: 5px;
 }
@@ -318,7 +304,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-.tools-section1 {
+.tools-section {
 	padding: 173px 0px 153px 10px;
 }
 .tools-pretitle {
@@ -394,12 +380,6 @@ body {
 	line-height: 20px;
 	color: #c0c0c0;
 }
-.monstera_bottom {
-	display: flex;
-	align-items: center;
-	margin-bottom: 40px;
-	margin-right: -16px;
-}
 /* Monstera styles end */
 /* Clients styles start */
 .clients {
@@ -463,7 +443,7 @@ body {
 	line-height: 20px;
 	color: #c0c0c0;
 }
-.starfall_bottom {
+.aside_bottom {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -640,24 +620,21 @@ body {
 	.companies-company {
 		margin-bottom: 20px;
 	}
+	.photo_list {
+		width: 450px;
+	}
 }
 @media (max-width: 1113.98px) {
 	.tools-text {
 		max-width: 350px;
 	}
+	.photo_list {
+		width: 450px;
+	}
 }
 @media (max-width: 767.98px) {
-	.photo_list_architecture {
-		width: 596px;
-	}
-	.photo_list_product {
-		width: 596px;
-	}
-	.photo_list_drone {
-		width: 596px;
-	}
-	.photo_list_wildlife {
-		width: 596px;
+	.photo_list {
+		width: 300px;
 	}
 	.tools {
 		background-size: cover;
@@ -681,7 +658,7 @@ body {
 	.header_list {
 		display: none;
 	}
-	.photo_item {
+	.photo_items {
 		flex-wrap: wrap;
 	}
 	.photography-list {
@@ -689,26 +666,12 @@ body {
 		margin-bottom: 20px;
 		margin-right: 0;
 	}
-	.photo_list_architecture {
+	.photo_list {
 		width: 384px;
 		margin-bottom: 20px;
 		margin-right: 0;
 	}
-	.photo_list_product {
-		width: 100%;
-		margin-bottom: 20px;
-		margin-right: 0;
-	}
-	.photo_list_drone {
-		width: 100%;
-		margin-bottom: 20px;
-		margin-right: 0;
-	}
-	.photo_list_wildlife {
-		width: 100%;
-		margin-bottom: 20px;
-		margin-right: 0;
-	}
+
 	.footer-form-container {
 		margin-bottom: 10px;
 	}
