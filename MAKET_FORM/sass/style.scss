@@ -10,7 +10,6 @@
 .header {
 	width: 100%;
 	background: rgb(196, 230, 146);
-	margin-bottom: 30px;
 	.title {
 		font-size: 24px;
 		padding: 20px;
@@ -49,6 +48,7 @@
 		}
 	}
 	.form {
+		color: rgb(67, 77, 54);
 		.legend {
 			text-align: center;
 			font-size: 24px;
@@ -80,13 +80,32 @@
 			box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
 			border-radius: 5px;
 		}
+		.input-radio {
+			width: auto;
+			box-shadow: none;
+			vertical-align: text-top;
+		}
 		select {
 			border: 1px solid #aaa;
 			box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
 			border-radius: 5px;
 		}
+		.radio-container {
+			display: inline;
+		}
+		@media (max-width: 450px) {
+			ul {
+				text-align: center;
+			}
+			.radio-container {
+				display: block;
+			}
+		}
 		.label-text {
 			width: 145px;
+		}
+		span {
+			padding: 10px;
 		}
 		textarea {
 			padding: 8px;
@@ -99,22 +118,24 @@
 			width: 40px;
 		}
 		#checkbox {
-			transform: scale(2);
+			transform: scale(1.5);
 			opacity: 0.9;
 			cursor: pointer;
 			box-shadow: none;
 		}
-		.button-container {width: 150px; margin: 0 auto;}
+		.button-container {
+			width: 150px;
+			margin: 0 auto;
+		}
 		.button {
 			width: 150px;
 			padding: 20px;
 			margin: 0 auto;
-			background-color: rgb(196, 230, 146); 
+			background-color: rgb(196, 230, 146);
 			border: none;
 			border-radius: 5px;
 			font-size: 20px;
-		
-			}
+		}
 		// label {margin-bottom: 10px;}
 		// input {margin-bottom: 10px;}
 		// .form-container {display: inline-flex; border: 5px dotted rgb(196, 230, 146) ; }
