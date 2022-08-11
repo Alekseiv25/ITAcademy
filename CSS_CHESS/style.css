@@ -1,4 +1,4 @@
-table{
+table {
 	border-collapse: collapse;
 }
 
@@ -27,11 +27,77 @@ table tr:last-child td {
 }
 
 table td:first-child {
-	background-color: rgb(140, 218, 140)  !important;
+	background-color: rgb(140, 218, 140) !important;
 	width: 15px !important;
 }
 
 table td:last-child {
-	background-color: rgb(140, 218, 140)  !important;
+	background-color: rgb(140, 218, 140) !important;
 	width: 15px !important;
+}
+
+.container {
+	margin-bottom: 20px;
+  padding: 20px;
+}
+
+.text {
+	font-size: 18px;
+	padding: 2px 0px;
+	text-align: justify;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	font-weight: 700;
+	color: red;
+}
+
+.blue {
+	font-weight: 700;
+	color: blueviolet;
+}
+
+.italic {
+	font-style: italic;
+	color: blue;
+	margin-bottom: 20px;
+}
+.link-before::before {
+	content: url(./extref.png);
+	margin-right: 4px;
+}
+
+
+h2 {
+	margin-top: 20px;
+}
+
+.link{
+  display: inline-block;
+  width: 124px;
+  text-align: right;
+  background-image: url(./extref.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.star{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  
+}
+
+.item{
+  cursor: pointer;
+  width: 75px;
+  height:78px;
+  background-image: url(./star0.png);
+}
+
+.item:hover~.item, .item:hover{
+  background-image: url(./star1.png);    
 }
