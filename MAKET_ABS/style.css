@@ -1,0 +1,53 @@
+*{ box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.container{
+    padding: 20px;
+}
+.text {max-width: 600px; text-align: justify; margin: 0 auto;}
+.images{
+    position: relative;
+    width: 400px;
+    height: 430px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.img1{position: absolute;
+    top: 20px;
+    z-index: 0;
+}
+
+.img2{position: absolute;
+    left: 200px;
+    z-index: 0;
+}
+
+.img3{position: absolute;
+    top: 223px;
+    left: 100px;
+    z-index: 0;
+}
+
+.img4{position: absolute;
+    top: 100px;
+    left: 70px;
+    z-index: 1;
+
+}
+
+
+.img1:hover{
+    z-index: 2;
+}
+
+.img2:hover{
+    z-index: 2;
+}
+
+.img3:hover{
+    z-index: 2;
+}
