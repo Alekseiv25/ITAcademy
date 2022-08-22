@@ -382,6 +382,7 @@ body {
 		@media (max-width: 615px) {
 			.form {
 				width: auto;
+				max-width: initial;
 			}
 		}
 	}

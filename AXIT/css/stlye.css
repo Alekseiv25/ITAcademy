@@ -293,7 +293,8 @@ body {
         opacity: 0.75; }
     @media (max-width: 615px) {
       .intro .container .form {
-        width: auto; } }
+        width: auto;
+        max-width: initial; } }
   @media (max-width: 615px) {
     .intro .container {
       -webkit-box-orient: vertical;
