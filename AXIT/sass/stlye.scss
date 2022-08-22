@@ -136,6 +136,7 @@ body {
 			z-index: 2;
 			overflow: hidden;
 		}
+
 		@media (max-width: 615px) {
 			.menu-btn {
 				display: flex;
@@ -178,16 +179,31 @@ body {
 }
 
 .menu {
-	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	padding: 15px;
-	background: #FFEFBA;
+	background: black;
 	transform: translateX(-100%);
 	transition: transform 0.5s;
+
+	ul {
+		margin: 0 auto;
+		li { text-align: center;
+			margin-bottom: 60px;
+			margin-top: 100px;
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			font-size: 18px;
+			text-align: center;
+			font-family: "Open Sans";
+		}
+	}
+	}
 }
 
 .menu.active {
