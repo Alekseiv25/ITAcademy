@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    height: 750px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-image: url(../img/Blank_political_map_Europe_in_2006_WF.svg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.city {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-name {
+    margin-left: 5px;
+    font-weight: 700;
+    color: black
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background-color: #ff0000;
+    border-radius: 100%;
+    transition: all 2s;
+}
+
+.circle::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    position: absolute;
+    border-radius: 100%;
+    left: -6px;
+    top: -6px;
+    animation: pulse-1 1.5s infinite 0.3s;
+}
+
+.circle::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    position: absolute;
+    border-radius: 100%;
+    left: -11px;
+    top: -11px;
+    animation: pulse-2 1.5s infinite
+}
+
+.hamburg {
+    top: 380px;
+    left: 330px;
+}
+
+.krakow {
+    top: 420px;
+    left: 450px;
+}
+
+.turin {
+    top: 540px;
+    left: 300px;
+}
+
+.madrid {
+    top: 660px;
+    left: 100px;
+}
+
+.cicrle__hamburg:hover .list {
+    display: block;
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.cicrle__madrid:hover .list {
+    display: block;
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.cicrle__krakow:hover .list {
+    display: block;
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+.cicrle__turin:hover .list {
+    display: block;
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+@keyframes pulse-1 {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-2 {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.list {
+    position: absolute;
+    width: 200px;
+    background-color: grey;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    left: -25px;
+    top: -102px;
+    transition: all 2s;
+    opacity: 0;
+    transform: rotateY(90deg);
+}
+
+.list::before {
+    content: '';
+    border-left: 10px solid transparent;
+    border-top: 10px solid grey;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+}
+
+.button {
+    width: 100%;
+    background-color: rgb(255, 20, 71);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    transition: 1s;
+}
+
+.button:hover {
+    background-color: rgb(252, 0, 189);
+    cursor: pointer;
+}
+
+.arena {
+    margin-bottom: 5px;
+}
+
+.date {
+    margin-bottom: 5px;
+    font-style: italic;
+
+}
