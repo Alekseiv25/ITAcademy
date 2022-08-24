@@ -1,0 +1,3 @@
+$(function () {
+    $('.rev-slider').slick();
+})
