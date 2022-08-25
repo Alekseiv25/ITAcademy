@@ -527,7 +527,7 @@ body {
 		padding: 13px 8px;
 		cursor: pointer;
 		position: relative;
-		top: 1px;
+		top: 2px;
 		font-family: "Open Sans";
 		font-size: 14px;
 		line-height: 19px;
@@ -558,7 +558,6 @@ body {
 		border-top: 1px solid #c6cbcd;
 		border-left: 1px solid #c6cbcd;
 		border-right: 1px solid #c6cbcd;
-		opacity: 0.75;
 		border-bottom: 1px solid #fff;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
@@ -985,7 +984,7 @@ body {
 		.rev-slider {
 			display: flex;
 			flex-direction: column;
-			margin-bottom: 65px;
+			margin-bottom: 65px !important;
 
 			.slide {
 				max-width: 370px;
@@ -1032,6 +1031,7 @@ body {
 					.customer-info {
 						margin-left: 30px;
 						padding: 10px;
+
 						.name {
 							font-size: 24px;
 							line-height: 32px;
@@ -1042,6 +1042,7 @@ body {
 
 				}
 			}
+
 			.slide {
 				max-width: 370px;
 				margin-right: initial;
@@ -1087,6 +1088,7 @@ body {
 					.customer-info {
 						margin-left: 30px;
 						padding: 10px;
+
 						.name {
 							font-size: 24px;
 							line-height: 32px;
@@ -1100,6 +1102,7 @@ body {
 		}
 
 	}
+
 
 
 	.cards {
