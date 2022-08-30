@@ -591,7 +591,9 @@ body {
         color: rgba(255, 255, 255, 0.5); }
     .prices .cards .card:hover {
       -webkit-transform: translateY(-20px);
-              transform: translateY(-20px); }
+              transform: translateY(-20px);
+      -webkit-filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+              filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2)); }
     .prices .cards .card:last-child {
       margin-right: 0px; }
     @media (max-width: 799px) {
