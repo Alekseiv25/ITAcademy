@@ -1,0 +1,15 @@
+/* questrial-regular - latin */
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/questrial-v18-latin-regular.woff2") format("woff2"), url("../fonts/questrial-v18-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+body {
+  font-family: "Questrial"; }
+
+@font-face {
+  font-family: 'Questrial';
+  src: url(../fonts/questrial-v18-latin-regular.woff2); }
+
+/*# sourceMappingURL=fonts.css.map */
