@@ -11,8 +11,8 @@ $(".carousel").slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 2,
-    // autoplay: true,
-    // autoplaySpeed: 1500
+    autoplay: true,
+    autoplaySpeed: 1500
 });
 
 $(".slider").slick({
@@ -20,20 +20,20 @@ $(".slider").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 1500
+    autoplay: true,
+    autoplaySpeed: 1500,
     responsive: [
         {
-            breakpoint: 1000,
+            breakpoint: 880,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
             }
         },
         {
-            breakpoint: 500,
+            breakpoint: 770,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1,
             }
         }
