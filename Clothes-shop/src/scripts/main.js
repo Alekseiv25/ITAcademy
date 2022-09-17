@@ -40,9 +40,9 @@ $(".slider").slick({
     ]
 });
 
-const burgerBody = document.querySelector('.burger__body')
+const burgerBody = document.querySelector('.burger-body')
 const iconMenu = document.querySelector('.menu-icon')
-const closeBurger = document.querySelector('.close__burger')
+const closeBurger = document.querySelector('.close-burger')
 if (iconMenu) {
     iconMenu.addEventListener("click", function () {
         burgerBody.classList.add("_active")
