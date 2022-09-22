@@ -2,6 +2,7 @@
 @import "./fonts.scss";
 @import "./header.scss";
 @import "./footer.scss";
+.selected {color: black;}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -47,9 +48,13 @@ img {
                 text-align: left;
                 margin-bottom: 20px;
                 color: #7981AD;
-
+                .nav-btn {
+                    color: #7981ad;
+                }
                 span {
-                    color: #524983;
+                    .nav-btn {
+                        color: #524983;
+                    }
                 }
             }
 
@@ -123,6 +128,11 @@ img {
         @media (max-width: 880px) {
             .content {
                 max-width: none;
+                margin-top: 80px;
+
+                .nav {
+                    display: none;
+                }
 
                 .title {
                     max-width: 640px;
@@ -164,6 +174,51 @@ img {
             display: flex;
             align-items: flex-end;
         }
+
+        @media (max-width: 480px) {
+            .img-container {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                margin-right: 0px;
+
+                .title {
+                    text-align: center;
+                }
+
+                .subtitle {
+                    max-width: none;
+                    text-align: center;
+                    margin-bottom: 190px;
+                }
+
+                .btn-container {
+                    margin: 0 auto;
+                    max-width: 250px;
+                    position: relative;
+                    top: 60px;
+
+                    input {
+                        z-index: 1000;
+                    }
+
+                    .button-text {
+                        z-index: 1000;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 370px) {
+            .content {
+                .title {
+                    font-size: 30px;
+                }
+            }
+        }
     }
 }
 
@@ -186,6 +241,19 @@ img {
         color: #272525;
     }
 
+    @media (max-width: 480px) {
+        .title {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 370px) {
+        .title {
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+
     .subtitle {
         font-size: 18px;
         font-weight: 400;
@@ -194,6 +262,18 @@ img {
         text-align: left;
         color: #454747;
         margin-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+        .subtitle {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 370px) {
+        .subtitle {
+            text-align: center;
+        }
     }
 
     .catalog-row {
@@ -230,49 +310,54 @@ img {
         .catalog-row {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-}
-
-.catalog-description {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .catalog-item {
-        max-width: 420px;
-
-        .title {
-            color: #272525;
-            font-size: 36px;
-            font-weight: 600;
-            line-height: 47px;
-            letter-spacing: 0em;
-            text-align: left;
         }
+    }
 
-        .text {
-            color: #454747;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 21px;
-            letter-spacing: 0em;
-            text-align: left;
+    .catalog-description {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-            span {
-                font-weight: 900;
+        .catalog-item {
+            max-width: 420px;
+
+            .title {
+                color: #272525;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 47px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            .text {
+                color: #454747;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+
+                span {
+                    font-weight: 900;
+                }
+            }
+
+            .text-else {
+                margin-top: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #524983
             }
         }
 
-        .text-else {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 21px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #524983
+        @media (max-width: 880px) {
+            .catalog-item {
+                max-width: none;
+            }
         }
     }
-    @media (max-width: 880px) {.catalog-item {max-width: none;}}
-}
 }
