@@ -6,6 +6,11 @@ $(".item-lang").click(function () {
     $(this).addClass("selected");
 });
 
+$(".list-item").click(function () {
+    $(".list-item").removeClass("selected");
+    $(this).addClass("selected");
+});
+
 $(".carousel").slick({
     arrows: false,
     infinite: true,

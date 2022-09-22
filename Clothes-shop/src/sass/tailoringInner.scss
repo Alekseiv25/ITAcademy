@@ -1,0 +1,186 @@
+@import "./libs/reset.scss";
+@import "./fonts.scss";
+@import "./header.scss";
+@import "./footer.scss";
+
+.selected {color: #272525}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro {
+    background: linear-gradient(42.14deg, #9796F0 -17.31%, #FBC7D4 106.72%);
+
+    .wrapper {
+        display: flex;
+    }
+
+    .content {
+        max-width: 830px;
+        margin-top: 30px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+
+        .nav {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 20px;
+            color: #7981AD;
+
+            span {
+                color: #524983;
+            }
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 60px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 20px;
+            color: #272525;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #454747;
+            margin-bottom: 30px;
+            max-width: 630px;
+        }
+
+        .hoodies-row {
+            max-width: 300px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .hoodie-item {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 105.5%;
+                color: #3C336C;
+                transition: .5s;
+            }
+            .hoodie-item:hover {scale: (1.1);}
+        }
+
+        .order-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    height: 60px;
+                    width: 245px;
+                    left: 3px;
+                    top: 21px;
+                    border-radius: 60px;
+                    background-color: #3C336C;
+                    color: #FFF;
+                    border: 0px;
+                    transition: 0.5s;
+                    margin-bottom: 10px;
+                }
+
+                input:hover,
+                input:active {
+                    background-color: #231e3f
+                }
+
+                .button-text {
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: #3C336C;
+                }
+            }
+
+            .size-container {
+                .size-title {
+                    font-family: 'Gilroy';
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 105.5%;
+                    color: #272525;
+                    margin-bottom: 10px;
+                }
+
+                .size-list {
+                    display: flex;
+                    align-items: center;
+
+                    .list-item {
+                        font-weight: 300;
+                        line-height: 105.5%;
+                        color: #524983;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        transition: 0.2s;
+                    }
+                    .list-item:hover {scale: (1.1);}
+                    .list-item:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+            .choose-size {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 130%;
+                text-decoration-line: underline;
+                color: #524983;
+                transition: .5s;
+            }
+
+            .choose-size::before {
+                content: url(../images/tailoring-page/ruler.svg);
+                background-repeat: repeat;
+                position: relative;
+                right: 10px;
+                top: 5px;
+            }
+            .choose-size:hover {color:#231e3f}
+        }
+    }
+
+    .img-container {
+        display: flex;
+        align-items: end;
+    }
+}
