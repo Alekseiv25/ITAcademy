@@ -11,6 +11,15 @@ $(".list-item").click(function () {
     $(this).addClass("selected");
 });
 
+$(document).ready(function () {
+    $('.acc-menu .acc-head').on('click', f_acc);
+});
+function f_acc() {
+    $(this).toggleClass('_active')
+    $(this).next().slideToggle(1000);
+}
+
+
 $(".carousel").slick({
     arrows: false,
     infinite: true,
