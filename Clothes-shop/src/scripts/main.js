@@ -1,6 +1,48 @@
 import $ from "jquery";
 import "slick-carousel";
 
+
+let tab = function () {
+    let tabNav = document.querySelectorAll('.tabs-nav-item'),
+        tabContent = document.querySelectorAll('.clothes-content'),
+        tabName;
+
+    tabNav.forEach(item => {
+        item.addEventListener('click', selectTabNav)
+    });
+
+    function selectTabNav() {
+        tabNav.forEach(item => {
+            item.classList.remove('is-active');
+        });
+        this.classList.add('is-active');
+        tabName = this.getAttribute('data-tab-name');
+        selectTabContent(tabName);
+    }
+
+    function selectTabContent(tabName) {
+        tabContent.forEach(item => {
+            item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
+        })
+    }
+
+};
+
+
+tab();
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(".item-lang").click(function () {
     $(".item-lang").removeClass("selected");
     $(this).addClass("selected");
@@ -19,6 +61,26 @@ function f_acc() {
     $(this).next().slideToggle(1000);
 }
 
+
+// let tab = function () {
+
+//     let tabNav = document.querySelectorAll('.tabs-nav-item'),
+//         tabContent = document.querySelectorAll('.tab'),
+//         tabName;
+
+//     tabNav.forEach(item => {
+//         item.addEventListener('click', selectTabNav)
+//     }
+//     )
+//     function selectTabNav() {
+//         tabNav.forEach(item => { item.classList.remove('is-active') })
+//         this.classList.add('is-active')
+//         tabName = this.getAttribute('data-tab-name')
+//         selectTabContent(tabName)
+//     }
+//     function selectTabContent(tabName) { tabContent.forEach(item => { item.classList.contains('tabName') ? item.classList.add('is-active') : item.classList.remove('is-active') }) }
+// }
+// tab();
 
 $(".carousel").slick({
     arrows: false,

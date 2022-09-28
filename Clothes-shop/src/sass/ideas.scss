@@ -299,6 +299,16 @@
             }
         }
 
+        @media (max-width: 380px) {
+            .inputs {
+                input {
+                    width: 250px;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
         .submit:hover,
         .submit:active {
             background: rgb(28, 90, 76);

@@ -2,7 +2,7 @@
   "name": "clothes-shop",
   "version": "1.0.0",
   "description": "",
-  "source": "src/html/tailoringInner.html",
+  "source": "src/html/allItems.html",
   "scripts": {
     "start": "parcel serve --open",
     "build": "npm run clean && parcel build --public-url ./ --no-source-maps",
