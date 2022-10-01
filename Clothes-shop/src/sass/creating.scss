@@ -5,7 +5,7 @@
 @import "./tailoring-section.scss";
 
 .selected {
-    color: black;
+    color: #272525
 }
 
 body {
@@ -29,6 +29,7 @@ img {
     padding-right: 20px;
 }
 
+
 .intro {
     background: linear-gradient(42.14deg, #9796F0 -17.31%, #FBC7D4 106.72%);
 
@@ -38,7 +39,7 @@ img {
 
 
         .content {
-            max-width: 830px;
+            max-width: 600px;
             margin-top: 30px;
             margin-right: 100px;
             margin-bottom: 50px;
@@ -58,9 +59,7 @@ img {
                 }
 
                 span {
-                    .nav-btn {
-                        color: #524983;
-                    }
+                    color: #524983;
                 }
             }
 
@@ -86,38 +85,19 @@ img {
                 max-width: 630px;
             }
 
-            .btn-container {
-                display: flex;
-                max-width: 520px;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 20px;
+            input {
+                height: 60px;
+                width: 245px;
+                border-radius: 60px;
+                background-color: #3C336C;
+                color: #FFF;
+                border: 0px;
+                transition: 0.5s;
+            }
 
-                input {
-                    height: 60px;
-                    width: 245px;
-                    left: 3px;
-                    top: 21px;
-                    border-radius: 60px;
-                    background-color: #3C336C;
-                    color: #FFF;
-                    border: 0px;
-                    transition: 0.5s;
-                }
-
-                input:hover,
-                input:active {
-                    background-color: #231e3f
-                }
-
-                .button-text {
-                    font-size: 17px;
-                    font-weight: 500;
-                    line-height: 24px;
-                    letter-spacing: 0em;
-                    text-align: center;
-                    color: #3C336C;
-                }
+            input:hover,
+            input:active {
+                background-color: #231e3f
             }
         }
 
@@ -141,30 +121,15 @@ img {
                 }
 
                 .title {
-                    max-width: 640px;
+                    max-width: 420px;
                 }
 
                 .subtitle {
-                    max-width: 300px;
-
-                    span {
-                        display: none;
-                    }
+                    max-width: 400px;
                 }
 
-                .btn-container {
-                    flex-direction: column;
-                    align-items: initial;
-                    max-width: 300px;
-
-                    input {
-                        margin-bottom: 5px;
-                    }
-
-                    .button-text {
-                        margin-left: 20px;
-                        text-align: initial;
-                    }
+                input {
+                    margin-bottom: 5px;
                 }
             }
 
@@ -177,13 +142,20 @@ img {
         }
 
         .img-container {
+            margin-top: 10px;
             display: flex;
             align-items: flex-end;
+
+            img {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
         }
 
         @media (max-width: 480px) {
             .img-container {
-                max-width: 80%;
+                max-width: 90%;
+                right: auto;
             }
         }
 
@@ -202,17 +174,15 @@ img {
                 }
 
                 .btn-container {
-                    margin: 0 auto;
-                    max-width: 250px;
                     position: relative;
                     top: 60px;
+                    margin: 0 auto;
+                    max-width: 250px;
 
                     input {
                         z-index: 1000;
-                    }
+                        position: relative;
 
-                    .button-text {
-                        z-index: 1000;
                     }
                 }
             }
@@ -226,4 +196,8 @@ img {
             }
         }
     }
+}
+
+.tailoring {
+    margin-top: -30px;
 }
