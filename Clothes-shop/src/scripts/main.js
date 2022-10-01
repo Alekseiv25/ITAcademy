@@ -1,7 +1,7 @@
 import $ from "jquery";
 import "slick-carousel";
 
-
+//Tabs
 let tab = function () {
     let tabNav = document.querySelectorAll('.tabs-nav-item'),
         tabContent = document.querySelectorAll('.clothes-content'),
@@ -28,7 +28,7 @@ let tab = function () {
 
 };
 
-
+//Change language
 tab();
 $(".item-lang").click(function () {
     $(".item-lang").removeClass("selected");
@@ -39,7 +39,7 @@ $(".list-item").click(function () {
     $(".list-item").removeClass("selected");
     $(this).addClass("selected");
 });
-
+//Accordion
 $(document).ready(function () {
     $('.acc-menu .acc-head').on('click', f_acc);
 });
@@ -47,6 +47,7 @@ function f_acc() {
     $(this).toggleClass('_active')
     $(this).next().slideToggle(1000);
 }
+//Slick slider
 $(".carousel").slick({
     arrows: false,
     infinite: true,
@@ -80,7 +81,7 @@ $(".slider").slick({
         }
     ]
 });
-
+//Burger menu
 const burgerBody = document.querySelector('.burger-body')
 const iconMenu = document.querySelector('.menu-icon')
 const closeBurger = document.querySelector('.close-burger')
