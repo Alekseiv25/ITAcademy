@@ -81,6 +81,7 @@ $(".slider").slick({
         }
     ]
 });
+
 //Burger menu
 const burgerBody = document.querySelector('.burger-body')
 const iconMenu = document.querySelector('.menu-icon')
