@@ -109,6 +109,17 @@ img {
                     scale: 1.1;
                 }
             }
+
+            @media (max-width: 768px) {
+                .row-container {
+                    flex-direction: column;
+                    align-items: initial;
+
+                    .row-item {
+                        text-align: start;
+                    }
+                }
+            }
         }
 
         @media (max-width: 1090px) {
@@ -125,6 +136,7 @@ img {
             .content {
                 max-width: none;
                 margin-top: 80px;
+                z-index: 1;
 
                 .nav {
                     display: none;
@@ -169,7 +181,7 @@ img {
         .img-container {
             display: flex;
             align-items: flex-end;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
 
         @media (max-width: 480px) {
@@ -189,23 +201,12 @@ img {
                 .subtitle {
                     max-width: none;
                     text-align: center;
-                    margin-bottom: 110px;
+                    margin-bottom: 280px;
                 }
 
-                // .btn-container {
-                //     margin: 0 auto;
-                //     max-width: 250px;
-                //     position: relative;
-                //     top: 60px;
-
-                //     input {
-                //         z-index: 1000;
-                //     }
-
-                //     .button-text {
-                //         z-index: 1000;
-                //     }
-                // }
+                .row-container {
+                    display: none;
+                }
             }
         }
 
@@ -337,10 +338,23 @@ img {
             }
         }
 
+        @media (max-width: 1000px) {
+            .acc-menu {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
         .img-container {
             border-radius: 15px;
             padding-top: 20px;
             margin-bottom: 50px;
+        }
+
+        @media (max-width: 1000px) {
+            .img-container {
+                display: none;
+            }
         }
     }
 }
@@ -488,6 +502,16 @@ img {
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .feedback-container {
+        flex-wrap: wrap;
+
+        .contacts {
+            margin-bottom: 30px;
         }
     }
 }
