@@ -93,7 +93,7 @@ img {
                 justify-content: space-between;
                 margin-bottom: 20px;
 
-                input {
+                button {
                     height: 60px;
                     width: 245px;
                     left: 3px;
@@ -103,10 +103,14 @@ img {
                     color: #FFF;
                     border: 0px;
                     transition: 0.5s;
+
+                    a {
+                        color: #fff;
+                    }
                 }
 
-                input:hover,
-                input:active {
+                button:hover,
+                button:active {
                     background-color: #231e3f
                 }
 
@@ -157,7 +161,7 @@ img {
                     align-items: initial;
                     max-width: 300px;
 
-                    input {
+                    button {
                         margin-bottom: 5px;
                     }
 
@@ -207,7 +211,7 @@ img {
                     position: relative;
                     top: 60px;
 
-                    input {
+                    button {
                         z-index: 1000;
                     }
 
